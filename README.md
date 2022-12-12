@@ -1,19 +1,19 @@
-## Java Assignment 4
+## Java project on restarant Mangement
 
 ## What it does
 This is a java project for restaurant management <br>
 
-# You can log in as cusomter or owner 
+<p>## You can log in as cusomter or owner 
 
-# As owner you can
+## As owner you can
 - See menu
 - See all customers
 - Add customers
-# As customer you can
+## As customer you can
 - See menu
 - Select food items and their quantity
 - Pay bill
-    
+</p>  
 
 ## Folder Structure
 
