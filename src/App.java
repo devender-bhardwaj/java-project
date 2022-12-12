@@ -9,7 +9,7 @@ public class App {
     public static void customerLog(Connection con, Scanner sc) throws SQLException {
         Menu menu = new Menu(con);
         ArrayList<FoodOrder> orders = menu.takeOrder(sc);
-        FoodOrder.generateBill(orders);
+        FoodOrder.generateBill(orders,sc);
     }
 
     public static int start(Scanner sc) {

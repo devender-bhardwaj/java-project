@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import utilities.ProvidePadding;
 
@@ -20,8 +21,8 @@ public class FoodOrder extends Food{
         return str;
     }
 
-    public static void generateBill(ArrayList<FoodOrder> orders) {
-        int totalAmount = 0;
+    public static double generateBill(ArrayList<FoodOrder> orders, Scanner sc) {
+        int totalCost = 0;
 
         //header for table
         String header = ProvidePadding.paddBoth("Order No.", 10, ' ');
@@ -33,10 +34,26 @@ public class FoodOrder extends Food{
 
         for (FoodOrder foodOrder : orders) {
             System.out.println(foodOrder);
-            totalAmount += foodOrder.price * foodOrder.quantiy;
+            totalCost += foodOrder.price * foodOrder.quantiy;
         }
-        System.out.println("\nTotal amount is: $"+totalAmount);
-        System.out.println("\nThank you for using our services");      
+        System.out.println("\nTotal Cost is: $"+totalCost);
+        System.out.print("Tip :$");
+        int tip = sc.nextInt();
+        System.out.println("Total amount is to pay is:$"+tip + totalCost);
+        while (true) {
+            System.out.println("Pay bill(y/n)");
+            String ans = sc.nextLine();
+            if (ans.equals("Y") || ans.equals("y")) {
+                break;
+            } else if (ans.equals("n") || ans.equals(ans)) {
+                System.out.println("You have to pay bill");
+            } else {
+                System.out.println("Enter a valid input");
+            }
+
+        }
+        System.out.println("\nThank you for using our services");     
+        return totalCost; 
     }
     
 }
