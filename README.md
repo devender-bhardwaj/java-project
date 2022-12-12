@@ -3,7 +3,7 @@
 ## What it does
 This is a java project for restaurant management <br>
 
-<p>## You can log in as cusomter or owner 
+## You can log in as cusomter or owner 
 
 ## As owner you can
 - See menu
@@ -13,7 +13,7 @@ This is a java project for restaurant management <br>
 - See menu
 - Select food items and their quantity
 - Pay bill
-</p>  
+ 
 
 ## Folder Structure
 
