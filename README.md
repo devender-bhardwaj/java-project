@@ -31,7 +31,7 @@ For now you can create database in system named `restaurant` <br>
 
 ### `menu`
 #### `Description`
-![description of table menu](database description/menudesc.jpg)
+![description of table menu](/database description/menudesc.jpg)
 
 #### `Content`
 ![content in table menu]("database description\menucon.jpg")
