@@ -22,24 +22,12 @@ The workspace contains two folders by default, where:
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
 - `bin`: the folder to main dependencies
+- `database description`: the folder to database
 
 ## Shortcomings 
 I haven't figured out how to add database to github,
 Once I learn this database files will be added in lib folder. <br>
 For now you can create database in system named `restaurant` <br>
-`restaurant` contains 2 tables `menu` and `customer`
-
-### `menu`
-#### `Description`
-![description of table menu]("database description\menudesc.jpg")
-
-#### `Content`
-![content in table menu]("database description\menucon.jpg")
-
-### `customer`
-#### `Description`
-![description of table customer]("database description\custdesc.jpg")
-
-#### `Content`
-![content in table customer]("database description\custcon.jpg")
+`restaurant` contains 2 tables `menu` and `customer`<br>
+You can check description and content of these tables in `database description` folder
 
