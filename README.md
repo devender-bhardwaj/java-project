@@ -25,6 +25,21 @@ The workspace contains two folders by default, where:
 
 ## Shortcomings 
 I haven't figured out how to add database to github,
-Once I learn this database files will be added in lib folder.
+Once I learn this database files will be added in lib folder. <br>
+For now you can create database in system named `restaurant` <br>
+`restaurant` contains 2 tables `menu` and `customer`
 
+### `menu`
+#### `Description`
+![description of table menu]("database description\menudesc.jpg")
+
+#### `Content`
+![content in table menu]("database description\menucon.jpg")
+
+### `customer`
+#### `Description`
+![description of table customer]("database description\custdesc.jpg")
+
+#### `Content`
+![content in table customer]("database description\custcon.jpg")
 
