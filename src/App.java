@@ -62,11 +62,11 @@ public class App {
         }
     
     public static void main(String[] args) throws Exception {
-        Connection con = CP.getC("restaurant");
+        Scanner sc = new Scanner(System.in);
+        Connection con = CP.getC("restaurant",sc);
         System.out.println("Enter:");
         System.out.println("1 if you are owner");
         System.out.println("2 if you are customer");
-        Scanner sc = new Scanner(System.in);
         int choice = start(sc);
         
         if (choice == 1) {
