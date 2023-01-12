@@ -42,6 +42,5 @@ The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
-- `bin`: the folder to main .class files
 - `database description`: the folder to database dump file
 
