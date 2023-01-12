@@ -37,15 +37,26 @@ public class FoodOrder extends Food{
             totalCost += foodOrder.price * foodOrder.quantiy;
         }
         System.out.println("\nTotal Cost is: $"+totalCost);
-        System.out.print("Tip :$");
-        int tip = sc.nextInt();
-        System.out.println("Total amount is to pay is:$"+tip + totalCost);
+
+        int tip;
+        while (true) {
+            System.out.print("Tip :$");
+            String s = sc.nextLine();
+            try {
+                tip = Integer.parseInt(s);
+                break;
+            } catch (Exception e) {
+                System.out.println("Enter valid input");
+            }
+        }
+
+        System.out.println("Total amount is to pay is:$"+(tip + totalCost)+"\n");
         while (true) {
             System.out.println("Pay bill(y/n)");
-            String ans = sc.nextLine();
+            String ans = sc.next();
             if (ans.equals("Y") || ans.equals("y")) {
                 break;
-            } else if (ans.equals("n") || ans.equals(ans)) {
+            } else if (ans.equals("n") || ans.equals("N")) {
                 System.out.println("You have to pay bill");
             } else {
                 System.out.println("Enter a valid input");

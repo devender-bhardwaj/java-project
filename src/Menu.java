@@ -43,7 +43,7 @@ public class Menu {
         displayMenu();
         System.out.print("Enter here (0 for exit): ");
         String inpu = sc.nextLine();
-        int sq = 0;
+        int sequence = 0;
         inputLoop:
         while (!(inpu.equals("0"))) {
             StringTokenizer strTokenizer = new StringTokenizer(inpu);
@@ -63,7 +63,7 @@ public class Menu {
                 if (foodid == 0) {
                     break inputLoop;
                 }
-                ++sq;
+                ++sequence;
                 Food food = getFood(foodid);
                 String quantityStr ;
                 int quantity;
@@ -77,7 +77,7 @@ public class Menu {
                         System.out.println("Enter valid quantiy for "+food.fname+": ");
                     }
                 }
-                orders.add(new FoodOrder(food, quantity, sq));
+                orders.add(new FoodOrder(food, quantity, sequence));
             }
 
             displayMenu();
